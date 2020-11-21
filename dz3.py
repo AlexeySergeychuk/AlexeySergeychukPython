@@ -1,6 +1,6 @@
 #--------------------------1------------------------
-
-#def delenie(num1, num2):
+#
+# def delenie(num1, num2):
 #     """Маленькая примитавная функция из первого задания"""
 #     try:
 #         fin = num1/num2
@@ -10,7 +10,7 @@
 
 # delenie(int(input('First number: ')), int(input('Second number: ')))
 
-#--------------------------2-------------------------
+#--------------------------2--------------------------
 #
 # def char(**kwargs):
 #     """Функция выводит данные по пользователю в одну строку"""
@@ -19,15 +19,31 @@
 
 # char(Имя="Алексей", Фамилия="Васильев", date='04.05.1977', City='Moscow', email='example@examples.ed')
 #
+
+# ---------------------------2.1-------------------------
+
+# def char1(**kwargs):
+#     return '/'.join(kwargs.values())
+#
+#
+# print(char1(gg='2',    sdg ='334'))
+#
+
+
+
 # --------------------------3---------------------------
 
 # def sumtwomax(num_1, num_2, num_3):
 #     l=[num_1, num_2, num_3]
-#     mins=min(l)
-#     l.remove(mins)
-#     print(sum(l))
+#     try:
+#         l.remove(min(l))
+#         return (sum(l))
+#     except TypeError:
+#         return 'Введите числа!_'
 #
-# sumtwomax(2,5,9)
+#
+#
+# print(sumtwomax(2,5,9))
 
 # ----------------------------4.1-----------------------------
 
